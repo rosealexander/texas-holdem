@@ -1,0 +1,495 @@
+@font-face {
+  font-family: "PressStart2P";
+  src: url(/src/font/PressStart2P.ttf) format("truetype");
+}
+@font-face {
+  font-family: "unifont_upper";
+  src: url(/src/font/unifont_upper-13.0.02.ttf) format("truetype");
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  user-select: none;
+}
+
+.text {
+  user-select: none;
+  font-family: PressStart2P;
+}
+
+.card {
+  user-select: none;
+  font-family: unifont_upper;
+}
+
+/* TOP-CONTENT */
+
+#interface-content {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  max-width: 668px;
+  max-height: 376px;
+  min-width: 500px;
+  min-height: 325px;
+  background-color: whitesmoke;
+}
+
+#top-container {
+  position: absolute;
+  width: 100%;
+  height: 16%;
+}
+
+#top-left-text-container {
+  position: absolute;
+  text-align: right;
+  top: 30%;
+  left: 16%;
+  width: 20%;
+  height: 40%;
+}
+
+#top-left-text {
+  color: blue;
+  font-size: 24px;
+}
+
+#pot-icon-container {
+  position: absolute;
+  text-align: left;
+  top: 0;
+  left: 37%;
+  width: 8%;
+  height: 100%;
+}
+
+#pot-icon {
+  font-family: unifont_upper;
+  font-size: 56px;
+}
+
+#pot-score-container {
+  position: absolute;
+  text-align: left;
+  top: 32%;
+  left: 46%;
+  width: 16%;
+  height: 50%;
+}
+
+#pot-score-text {
+  font-size: 32px;
+}
+
+#top-right-text-container {
+  position: absolute;
+  text-align: left;
+  top: 30%;
+  right: 16%;
+  width: 20%;
+  height: 40%;
+}
+
+#top-right-text {
+  font-size: 24px;
+  color: red;
+}
+
+/* CENTER-CONTENT */
+
+#center-container {
+  position: absolute;
+  top: 16%;
+  width: 100%;
+  height: 60%;
+}
+
+/* OPPONENTS */
+
+.opponent-container {
+  position: absolute;
+  width: 20%;
+  height: 100%;
+}
+
+.opponent-turn-marker-container {
+  position: absolute;
+  text-align: center;
+  width: 22%;
+  height: 15%;
+}
+
+.opponent-turn-marker {
+  font-size: 32px;
+  color: red;
+}
+
+.opponent-card-1-container {
+  position: absolute;
+  text-align: center;
+  top: 15%;
+  width: 60%;
+  height: 24%;
+}
+
+.opponent-card-1 {
+  font-size: 64px;
+}
+
+.opponent-card-2-container {
+  position: absolute;
+  text-align: center;
+  top: 39%;
+  width: 60%;
+  height: 24%;
+}
+
+.opponent-card-2 {
+  font-size: 64px;
+}
+
+.opponent-score-container {
+  position: absolute;
+  top: 68%;
+  width: 90%;
+  height: 10%;
+}
+
+.opponent-score {
+  font-size: 16px;
+}
+
+.opponent-score-marker-container {
+  position: absolute;
+  text-align: center;
+  top: 64%;
+  width: 13%;
+  height: 7%;
+}
+
+.opponent-score-marker {
+  font-size: 16px;
+  color: red;
+}
+
+.opponent-turn-container {
+  position: absolute;
+  top: 58%;
+  width: 68%;
+  height: 8%;
+}
+
+.opponent-turn-text {
+  font-size: 18px;
+}
+
+.opponent-raise-container {
+  position: absolute;
+  top: 68%;
+  width: 68%;
+  height: 8%;
+}
+
+.opponent-raise-text {
+  font-size: 18px;
+}
+
+/* OPPONENT-A */
+
+#opponentA-container {
+  left: 0;
+}
+
+#opponentA-turn-marker-container {
+  left: 42%;
+}
+
+#opponentA-card-1-container {
+  left: 20%;
+}
+
+#opponentA-card-1 {
+  font-size: 64px;
+  transform: rotateZ(90deg);
+  margin-top: -5%;
+}
+
+#opponentA-card-2-container {
+  left: 20%;
+}
+
+#opponentA-card-2 {
+  font-size: 64px;
+  transform: rotateZ(90deg);
+  margin-top: -5%;
+}
+
+#opponentA-score-container {
+  text-align: left;
+  left: 26%;
+}
+
+#opponentA-score-marker-container {
+  right: 2%;
+}
+
+#opponentA-turn-container {
+  text-align: left;
+  left: 100%;
+}
+
+#opponentA-raise-container {
+  text-align: left;
+  left: 100%;
+}
+
+/* OPPONENT-B */
+
+#opponentB-container {
+  right: 0;
+}
+
+#opponentB-turn-marker-container {
+  right: 42%;
+}
+
+#opponentB-card-1-container {
+  right: 20%;
+}
+
+#opponentB-card-1 {
+  font-size: 64px;
+  transform: rotateZ(-90deg);
+  margin-top: -10%;
+}
+
+#opponentB-card-2-container {
+  right: 20%;
+}
+
+#opponentB-card-2 {
+  font-size: 64px;
+  transform: rotateZ(-90deg);
+  margin-top: -10%;
+}
+
+#opponentB-score-container {
+  text-align: right;
+  right: 26%;
+}
+
+#opponentB-score-marker-container {
+  left: 2%;
+}
+
+#opponentB-turn-container {
+  text-align: right;
+  right: 100%;
+}
+
+#opponentB-raise-container {
+  text-align: right;
+  right: 100%;
+}
+
+/* TABLE CARDS */
+
+.table-card {
+  font-size: 72px;
+}
+
+#table-cards-container {
+  position: relative;
+  width: 60%;
+  top: 0;
+  left: 20%;
+  height: 50%;
+}
+
+#table-card-1-container {
+  position: absolute;
+  left: 0;
+  width: 16.6%;
+}
+
+#table-card-2-container {
+  position: absolute;
+  left: 16.6%;
+  width: 16.6%;
+}
+
+#table-card-3-container {
+  position: absolute;
+  left: 33.2%;
+  width: 16.6%;
+}
+
+#table-card-4-container {
+  position: absolute;
+  left: 49.8%;
+  width: 16.6%;
+}
+
+#table-card-5-container {
+  position: absolute;
+  left: 66.4%;
+  width: 16.6%;
+}
+
+#table-card-6-container {
+  position: absolute;
+  left: 83%;
+  width: 16.6%;
+}
+
+/* PLAYER TURN */
+
+#player-turn-container {
+  position: absolute;
+  text-align: center;
+  top: 36%;
+  left: 25%;
+  width: 50%;
+  height: 8%;
+}
+
+#player-turn {
+  font-size: 24px;
+}
+
+/* PLAYER CARDS */
+
+.player-card {
+  font-size: 108px;
+}
+
+#player-cards-container {
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 50%;
+  left: 35%;
+}
+
+#player-card-1-container {
+  position: absolute;
+  width: 50%;
+  left: 0;
+}
+
+#player-card-2-container {
+  position: absolute;
+  width: 50%;
+  right: 0;
+}
+
+/* LOWER CONTAINER */
+
+#lower-container {
+  position: absolute;
+  width: 100%;
+  top: 76%;
+  height: 24%;
+}
+
+/* BUTTONS */
+
+.button {
+  position: absolute;
+  top: 25%;
+  width: 18%;
+  height: 60%;
+}
+
+.button-text {
+  position: absolute;
+  top: 32%;
+  width: 100%;
+  height: 40%;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
+
+#fold-button-container {
+  left: 14%;
+  background-color: blue;
+}
+
+#call-button-container {
+  left: 41%;
+  background-color: blue;
+}
+
+#raise-button-container {
+  right: 14%;
+  background-color: red;
+}
+
+/* PLAYER SCORE */
+
+#player-score-container {
+  position: absolute;
+  width: 18%;
+  height: 30%;
+  top: -14%;
+  left: 14%;
+}
+
+#player-score {
+  font-size: 28px;
+}
+
+/* PLAYER RAISE */
+
+#player-raise-container {
+  position: absolute;
+  width: 18%;
+  height: 25%;
+  top: -6%;
+  right: 14%;
+}
+
+.raise-arrow-container {
+  position: absolute;
+  top: 0;
+  width: 20%;
+  height: 100%;
+}
+
+.raise-arrow {
+  font-size: 22px;
+  color: red;
+}
+.raise-arrow:hover {
+  color: magenta;
+}
+
+#raise-arrow-left-container {
+  left: 0;
+}
+
+#raise-arrow-right-container {
+  right: 0;
+}
+
+#raise-amount-container {
+  white-space: nowrap;
+  position: absolute;
+  left: 20%;
+  top: 10%;
+  width: 60%;
+  height: 70%;
+  text-align: center;
+}
+
+#raise-amount {
+  font-size: 16px;
+}
